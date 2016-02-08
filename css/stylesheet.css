@@ -294,6 +294,7 @@ footer ul {
 
 footer ul li {
     padding: 0% 5%;
+    display: block;
 }
 
 
@@ -307,8 +308,12 @@ footer ul li {
 
 #colonnes {
     width: 80%;
-    height: auto;
+    height: 160px;
     margin: 0 auto;
+}
+
+#li-inline li {
+    display: inline-block;
 }
 
 .border p {
@@ -316,17 +321,27 @@ footer ul li {
 }
 
 #legende {
+    position: absolute;
     width: 80%;
     height: auto;
     margin: 0 auto;
 }
-
 .border {
     border-top: 0.5px solid rgb(225,225,225);
-    padding-top: 7px;
-    margin-top: 5%;
+    padding-top: 20px;
 }
 
+#border-left {
+    position: absolute;
+    top: 10px;
+    left: 0;
+}
+
+#border-right {
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
 
 /*///////////////////RESPONSIVE///////////////////*/
 
@@ -432,17 +447,32 @@ footer ul li {
         text-align: center;
         width: auto;
         height: auto;
-        -webkit-columns: 2;
-        -moz-columns: 2;
-		columns: 2;
+        margin-bottom: 5%;
     }
     
     #colonnes ul {
         display: inline-block;
-        margin: 5%;
+        margin: 0% 10%;     
     }
     
     #colonnes li {
         margin: 5%;
+        display: block;
+        width: 90px;
+    }
+    
+    #li-inline li {
+        display: block;
+        width: 
+    }
+    
+    .border {
+        padding-top: 10px;
+    }
+    
+    #button-style1 {
+        font-size: 8pt;
+        max-height: 10%;
+        max-width: 25%;
     }
 }
