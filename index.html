@@ -4,81 +4,97 @@
     <head>
         <link rel="stylesheet" type="text/css" href="css/normalize.css">
          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link href='https://fonts.googleapis.com/css?family=Roboto:300,700' rel='stylesheet' type='text/css'>
         <title>Irving Farm - Coffee Roasters</title>
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
     </head>
     
     
-    <body>
+    <body class="text-deco">
         <header>
-            <div id="button">
-                <button name="button">SHOP COFFEE</button>
+            <div class="head-container">
+                <div id="button-style1" class="button-position">SHOP COFFEE</div>
             </div>
-            <div id="">
-                <p><a href="#">FREE SHIPPING ON ORDERS OVER $50</a></p>
-                <p><a href="#">ACCOUNT</a></p>
-                <p><a href="#">CART (0)</a></p>
+            <div class="bg-black text-color">
+                <div class="link1">
+                    <p><a href="#">FREE SHIPPING ON ORDERS OVER $50</a></p>
+                </div>
+                <div class="link2">
+                    <p><a href="#">ACCOUNT</a></p>
+                    <p><a href="#">CART (0)</a></p>
+                </div>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="#">SHOP</a></li>
-                    <li><a href="#">LOCATIONS</a></li>
-                    <li><a href="#">EDUCATION</a></li>
-                    <li><a href="#"><img src="images/raven_logo.png" alt="Logo Irving Factory"></a></li>
-                    <li><a href="#">WHOLESALE</a></li>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">BLOG</a></li>
-                </ul>
+            <nav id="menu">
+                <div id="liste">
+                    <ul>
+                        <li><p><a href="#">SHOP</a></p></li>
+                        <li><p><a href="#">LOCATION</a></p></li>
+                        <li><p><a href="#">EDUCATION</a></p></li>
+                        <li><a href="#"><img src="images/raven_logo.png" alt="Logo Irving Factory"></a></li>
+                        <li><p><a href="#">WHOLESALE</a></p></li>
+                        <li><p><a href="#">ABOUT</a></p></li>
+                        <li><p><a href="#">BLOG</a></p></li>
+                    </ul>
+                </div>
             </nav>
         </header>
         
         
-        <div id="container">
-            <div id="part-photo">
-                <section class="section-box">
+        <div class="main-container">
+            <div class="cards">
+                <section class="cardbox">
                     <img src="images/home-triptych-image-left.jpg" alt="Irving Place Front">
                     <h2>OUR CAFES</h2>
                 </section>
-            
-                <section class="section-box">
+                <section class="cardbox">
                     <img src="images/home-triptych-image-center.jpg" alt="Fruits">
                     <h2>ORIGIN STORIES</h2>
                 </section>
-            
-                <section class="section-box">
+                <section class="cardbox">
                     <img src="images/home-triptych-image-right.jpg" alt="People during a coffee class">
                     <h2>SIGN UP FOR CLASSES</h2>
                 </section>
             </div>
             
-            <div id="article">
-                <article>
-                    <h3>CAPUCAS, HONDURAS</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla elementum condimentum iaculis. Donec eu dolor et felis facilisis ultrices. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In pretium sagittis ornare. Duis accumsan aliquam lectus, vitae commodo sapien volutpat pellentesque.</p>
-                    <a href="#">SHOP</a>
-                </article>
+            <div class="article">
+                <div class="first-article bg-image">
+                    <article class="box-style capucas-position text-style">
+                        <h3>CAPUCAS, HONDURAS</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla elementum condimentum iaculis. Donec eu dolor et felis facilisis ultrices. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In pretium sagittis ornare. Duis accumsan aliquam lectus, vitae commodo sapien volutpat pellentesque.</p>
+                        <a href="#">SHOP</a>
+                    </article>
+                </div>
                 
-                <article>
-                    <h3>WHOLESALE</h3>
-                    <p>We supply our wholesale customers with only the highest quality coffees, carefully sourced and selected. We then support those coffees with expert training, and as much information as we can to allow you to deliver the perfect cup.</p>
-                    <a href="#">LEARN MORE</a>
-                </article>
+                <div class="second-article">
+                    <div id="text-photo">
+                        <article class="box-style wholesale-position text-style">
+                        <h3>WHOLESALE</h3>
+                        <p>We supply our wholesale customers with only the highest quality coffees, carefully sourced and selected. We then support those coffees with expert training, and as much information as we can to allow you to deliver the perfect cup.</p>
+                        <a href="#">LEARN MORE</a>
+                        </article>
+                        <img src="images/home-bottom-third.jpg" id="illustration">
+                    </div>
+                </div>    
             </div>
             
             <div id="subscription">
+                <div class="container-center">
                 <form action="">
-                    <input id="GET-name" type="text" name="name">
-                    <input type="submit" value="SUBSCRIPTION">
+                    <input id="GET-name" type="text" name="name" value="EMAIL ADDRESS HERE">
+                    <input type="submit" value="SUBSCRIPTION" id="button-style2" class="bg-black">
                 </form>
                 
-                <p>JOIN OUR NEWSLETTER & RECEIVE 
-10% OFF YOUR FIRST ORDER!</p>
-            </div>
+                <div class="info">
+                    <p>JOIN OUR NEWSLETTER & RECEIVE <br /> 
+<strong>10% OFF</strong> YOUR FIRST ORDER!</p>
+                </div>
+                </div>
         </div>
         
         
-        <footer>
+        <footer class="padding font-style">
+            <div id="colonnes">
             <ul>
                 <li><h4>COFFEE</h4></li>
                 <li>SINGLE ORIGIN</li>
@@ -116,7 +132,7 @@
             </ul>
             
             <ul>
-                <li>HELP</li>
+                <li><h4>HELP</h4></li>
                 <li>CUSTOMER SERVICE</li>
                 <li>MANAGE ACCOUNT</li>
                 <li>TRACK ORDER</li>
@@ -131,9 +147,14 @@
                 <i class="fa fa-google-plus"></i>
                 <i class="fa fa-instagram"></i>
             </ul>
-            
-            <p>© 2016 IRVING FARM COFFEE ROASTERS.</p>
-            <p>MADE BY C</p>
+            </div>
+                
+            <div id="legende">
+                <div class="border">
+                    <p>© 2016 IRVING FARM COFFEE ROASTERS.</p>
+                    <p>MADE BY C</p>
+                </div>
+            </div>
         
         </footer>
     </body>
