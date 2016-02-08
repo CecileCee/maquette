@@ -35,7 +35,7 @@ header {
 
 .head-container {
     width: 100%;
-    height: 500px;
+    height: 80vh;
     background-image: url(../images/home_main_desktop.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -326,3 +326,47 @@ footer ul li {
 
 
 /*///////////////////RESPONSIVE///////////////////*/
+
+@media (max-width: 768px) {
+    .head-container {
+        width: 100%;
+        height: 40vh;
+        background-image: url(../images/home_main_mobile.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position:center
+    }
+    
+    .bg-black {
+        display: none;
+    }
+    
+    
+    #menu ul {
+        display: none;
+    }
+    
+    /* CARDBOX */
+    .cards {
+        width: 80%;
+        height: auto;
+    }
+    
+    .cardbox {
+        display: block;
+        width: auto;
+        height: auto;
+        margin: 5%;
+    }
+    
+    .cardbox img {
+        width: 100%;
+        height: auto;
+    }
+    
+    
+     /* MAIN */
+    
+    
+    
+}
